@@ -1,9 +1,58 @@
-$color-primary: #B7D8D6;
-$color-secondary: #789E9E;
-$color-dark: #4D6466;
+$color-primary: #CE8054;
+$color-secondary: #B35340;
+$color-dark: #6F3637;
 $color-light: #EEF3DB;
-$color-accent: #FE615A;
+$color-accent: #233342;
+
+$header-font: "Prata", serif;
+$body-font: "Lato", sans-serif;
+
+html, body {
+    height: 100%;
+}
 
 .navbar {
     background-color: $color-primary;
+    h2 {
+        font-family: $header-font;
+        font-weight: bold;
+        color: $color-accent;
+    }
+}
+
+.header-home {
+    color: $color-accent;
+    padding-top: 200px;
+    background-image: url("../img/antarticamelting.jpg");
+    height: inherit;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        background-color: white;
+        font-size: 60px;
+    }
+    h2 {
+        background-color: white;
+        font-size: 30px;
+    }
+}
+
+body {
+    background-color: $color-light;
+    font-family: $body-font
+}
+
+h1 {
+    font-family: $header-font;
+}
+
+h2 {
+    font-family: $body-font;
+    font-weight: 700px;
+}
+
+.btn-header {
+    background-color: $color-secondary;
+    color: $color-light;
 }
