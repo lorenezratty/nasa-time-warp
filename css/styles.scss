@@ -23,6 +23,14 @@ html, body {
     }
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: $color-light;
+    .active {
+        color: $color-light;
+        font-weight: ;
+    }
+}
+
 .header-home {
     color: $color-accent;
     padding-top: 200px;
@@ -32,11 +40,9 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     h1 {
-        background-color: white;
         font-size: 60px;
     }
     h2 {
-        background-color: white;
         font-size: 30px;
         padding-bottom: 30px;
     }

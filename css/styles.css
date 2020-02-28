@@ -10,6 +10,12 @@ html, body {
   .navbar .nav-item {
     color: #EEF3DB; }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #EEF3DB; }
+  .navbar-light .navbar-nav .nav-link .active {
+    color: #EEF3DB;
+    font-weight: 50px; }
+
 .header-home {
   color: #233342;
   padding-top: 200px;
@@ -19,10 +25,8 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover; }
   .header-home h1 {
-    background-color: white;
     font-size: 60px; }
   .header-home h2 {
-    background-color: white;
     font-size: 30px;
     padding-bottom: 30px; }
   .header-home .card {
