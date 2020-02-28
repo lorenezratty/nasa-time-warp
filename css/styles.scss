@@ -1,4 +1,4 @@
-$color-primary: #CE8054;
+$color-primary: rgb(45, 48, 12);
 $color-secondary: #B35340;
 $color-dark: #6F3637;
 $color-light: #EEF3DB;
@@ -16,7 +16,10 @@ html, body {
     h2 {
         font-family: $header-font;
         font-weight: bold;
-        color: $color-accent;
+        color: $color-light;
+    }
+    .nav-item {
+        color: $color-light;
     }
 }
 
@@ -35,6 +38,11 @@ html, body {
     h2 {
         background-color: white;
         font-size: 30px;
+        padding-bottom: 30px;
+    }
+    .card {
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 }
 
@@ -55,4 +63,31 @@ h2 {
 .btn-header {
     background-color: $color-secondary;
     color: $color-light;
+}
+
+.learn-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h3 {
+        padding-bottom: 20px;
+    }
+    p {
+        padding-bottom: 20px;
+    }
+    .card {
+        .card-body {
+            background-color: $color-accent;
+            border-radius: px;
+        }
+        p {
+            color: $color-light;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: $color-light;
+            font-weight: bold;
+            background-color: $color-dark;
+            padding: 5px;
+        }
+    }
+
 }

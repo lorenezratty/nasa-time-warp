@@ -2,11 +2,13 @@ html, body {
   height: 100%; }
 
 .navbar {
-  background-color: #CE8054; }
+  background-color: #2d300c; }
   .navbar h2 {
     font-family: "Prata", serif;
     font-weight: bold;
-    color: #233342; }
+    color: #EEF3DB; }
+  .navbar .nav-item {
+    color: #EEF3DB; }
 
 .header-home {
   color: #233342;
@@ -21,7 +23,11 @@ html, body {
     font-size: 60px; }
   .header-home h2 {
     background-color: white;
-    font-size: 30px; }
+    font-size: 30px;
+    padding-bottom: 30px; }
+  .header-home .card {
+    padding-top: 30px;
+    padding-bottom: 20px; }
 
 body {
   background-color: #EEF3DB;
@@ -37,3 +43,21 @@ h2 {
 .btn-header {
   background-color: #B35340;
   color: #EEF3DB; }
+
+.learn-content {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .learn-content h3 {
+    padding-bottom: 20px; }
+  .learn-content p {
+    padding-bottom: 20px; }
+  .learn-content .card .card-body {
+    background-color: #233342;
+    border-radius: px; }
+  .learn-content .card p {
+    color: #EEF3DB; }
+  .learn-content .card h1, .learn-content .card h2, .learn-content .card h3, .learn-content .card h4, .learn-content .card h5, .learn-content .card h6 {
+    color: #EEF3DB;
+    font-weight: bold;
+    background-color: #6F3637;
+    padding: 5px; }
