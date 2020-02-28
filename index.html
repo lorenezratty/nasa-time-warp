@@ -4,18 +4,48 @@
 <head>
     <meta charset="utf-8" />
     <title>ClimaChange</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>ClimaChange, Discover Climate Change Across the Globe</title>
 </head>
 
 <body>
 
     <header>
-        <div>
-            <h1>ChlimaChange</h1>
-            <h2>Observe climate change across the world</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col my-5">
+                    <h1>ClimaChange</h1>
+                    <h2>Observe climate change across the world</h2>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#climaNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-right" id="climaNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-sm-6"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="changesearch.html"><i class="fa fa-search fa-sm"></i> Change Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notablechanges.html"><i class="fa fa-pencil fa-sm"></i> Notable Changes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html"><i class="fa fa-question fa-sm"></i> FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="">
         <h2>Why Climate Change Matters</h2>
         <h3>Spreading Knowledge</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -52,9 +82,14 @@
         </div>
         <div>
             Tel: 1-206-555-1234<br />
-            Email: campsites@nucamp.co
+            Email: test@test.com
         </div>
     </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
