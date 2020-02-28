@@ -27,7 +27,6 @@ html, body {
     color: $color-light;
     .active {
         color: $color-light;
-        font-weight: ;
     }
 }
 
@@ -74,26 +73,61 @@ h2 {
 .learn-content {
     padding-top: 80px;
     padding-bottom: 80px;
+    .learn-card {
+        border-radius: 10px;
+        overflow:hidden;
+      }
     h3 {
         padding-bottom: 20px;
     }
     p {
         padding-bottom: 20px;
     }
+    h1 {
+        background-color: $color-secondary;
+        padding: 7px;
+        border-radius: 3px;
+        color: $color-light;
+    }
     .card {
+        .card-img-top {
+            border-radius: 0px ;
+        }
         .card-body {
             background-color: $color-accent;
-            border-radius: px;
+            color: rgb(255, 255, 255);
         }
         p {
             color: $color-light;
+            padding: 0;
         }
         h1, h2, h3, h4, h5, h6 {
             color: $color-light;
             font-weight: bold;
             background-color: $color-dark;
             padding: 5px;
+            text-align: center;
+            border-radius: 10px;
         }
     }
-
+}
+.mid-parallax {
+    color: $color-accent;
+    padding-top: 200px;
+    background-image: url("../img/omaha_oli.jpg");
+    height: 1000px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    .card {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
 }

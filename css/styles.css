@@ -13,8 +13,7 @@ html, body {
 .navbar-light .navbar-nav .nav-link {
   color: #EEF3DB; }
   .navbar-light .navbar-nav .nav-link .active {
-    color: #EEF3DB;
-    font-weight: 50px; }
+    color: #EEF3DB; }
 
 .header-home {
   color: #233342;
@@ -51,17 +50,47 @@ h2 {
 .learn-content {
   padding-top: 80px;
   padding-bottom: 80px; }
+  .learn-content .learn-card {
+    border-radius: 10px;
+    overflow: hidden; }
   .learn-content h3 {
     padding-bottom: 20px; }
   .learn-content p {
     padding-bottom: 20px; }
+  .learn-content h1 {
+    background-color: #B35340;
+    padding: 7px;
+    border-radius: 3px;
+    color: #EEF3DB; }
+  .learn-content .card .card-img-top {
+    border-radius: 0px; }
   .learn-content .card .card-body {
     background-color: #233342;
-    border-radius: px; }
+    color: white; }
   .learn-content .card p {
-    color: #EEF3DB; }
+    color: #EEF3DB;
+    padding: 0; }
   .learn-content .card h1, .learn-content .card h2, .learn-content .card h3, .learn-content .card h4, .learn-content .card h5, .learn-content .card h6 {
     color: #EEF3DB;
     font-weight: bold;
     background-color: #6F3637;
-    padding: 5px; }
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px; }
+
+.mid-parallax {
+  color: #233342;
+  padding-top: 200px;
+  background-image: url("../img/omaha_oli.jpg");
+  height: 1000px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .mid-parallax h1 {
+    font-size: 60px; }
+  .mid-parallax h2 {
+    font-size: 30px;
+    padding-bottom: 30px; }
+  .mid-parallax .card {
+    padding-top: 30px;
+    padding-bottom: 20px; }
