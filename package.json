@@ -15,13 +15,22 @@
     "popper.js": "^1.12.9"
   },
   "devDependencies": {
+    "copyfiles": "^2.0.0",
+    "imagemin-cli": "^3.0.0",
     "lite-server": "^2.3.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "rimraf": "^2.6.2",
+    "usemin-cli": "^0.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "start": "npm run watch:all",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* -o dist/img",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin observe.html -d dist --htmlmin -o dist/observe.html",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"

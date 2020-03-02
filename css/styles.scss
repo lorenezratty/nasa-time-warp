@@ -2,57 +2,67 @@ $color-primary: rgb(45, 48, 12);
 $color-secondary: #B35340;
 $color-dark: #6F3637;
 $color-light: #EEF3DB;
-$color-accent: #233342;
+$color-accent: rgb(9, 21, 24);
+$app-color: #495A3A;
 
-$header-font: "Prata", serif;
-$body-font: "Lato", sans-serif;
+$header-font: "Montserrat", ;
+$body-font: "Montserrat", ;
 
 html, body {
     height: 100%;
+    .app-background {
+        background-color: $app-color;
+    }
 }
 
 .navbar {
-    background-color: $color-primary;
+    background-color: white;
     h2 {
         font-family: $header-font;
         font-weight: bold;
-        color: $color-light;
+        color: $color-accent;
     }
     .nav-item {
-        color: $color-light;
+        .active {
+            font-weight: 15px;
+            border-radius: 4px;
+            color: white;
+        }
     }
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: $color-light;
-    .active {
-        color: $color-light;
+.navbar-app {
+    background-color:$app-color;
+    h2 {
+        font-family: $header-font;
+        font-weight: bold;
+        color: white;
+    }
+    .nav-item {
+        .active {
+            font-weight: 15px;
+            border-radius: 4px;
+            color: white;
+        }
     }
 }
 
 .header-home {
     color: $color-accent;
-    padding-top: 200px;
-    background-image: url("../img/antarticamelting.jpg");
-    height: inherit;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 200px;
     h1 {
         font-size: 60px;
+        color: $color-accent;
     }
     h2 {
-        font-size: 30px;
-        padding-bottom: 30px;
-    }
-    .card {
-        padding-top: 30px;
+        font-size: 23px;
         padding-bottom: 20px;
+        color: $color-dark;
     }
 }
 
 body {
-    background-color: $color-light;
+    background-color: $color-accent;
     font-family: $body-font
 }
 
@@ -62,72 +72,60 @@ h1 {
 
 h2 {
     font-family: $body-font;
-    font-weight: 700px;
-}
-
-.btn-header {
-    background-color: $color-secondary;
-    color: $color-light;
 }
 
 .learn-content {
     padding-top: 80px;
     padding-bottom: 80px;
-    .learn-card {
-        border-radius: 10px;
-        overflow:hidden;
-      }
     h3 {
         padding-bottom: 20px;
+        color: whitesmoke;
     }
     p {
         padding-bottom: 20px;
     }
     h1 {
-        background-color: $color-secondary;
-        padding: 7px;
-        border-radius: 3px;
-        color: $color-light;
-    }
-    .card {
-        .card-img-top {
-            border-radius: 0px ;
-        }
-        .card-body {
-            background-color: $color-accent;
-            color: rgb(255, 255, 255);
-        }
-        p {
-            color: $color-light;
-            padding: 0;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: $color-light;
-            font-weight: bold;
-            background-color: $color-dark;
-            padding: 5px;
-            text-align: center;
-            border-radius: 10px;
-        }
+        background-color: whitesmoke;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color: $color-accent;
     }
 }
-.mid-parallax {
-    color: $color-accent;
-    padding-top: 200px;
-    background-image: url("../img/omaha_oli.jpg");
-    height: 1000px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+
+.site-footer {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    h1 {
-        font-size: 60px;
-    }
-    h2 {
-        font-size: 30px;
-        padding-bottom: 30px;
-    }
-    .card {
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-}
+  }
+
+  .carousel-caption {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  @media screen and (max-width: 768px) 
+     {    .carousel-caption {
+          bottom: 20px !important;
+          }
+          .carousel-caption h2 { 
+          font-size : 60px !important; 
+          }
+     }
+.card-full {
+    min-height: 350px;
+    height: 100vh;
+    padding-top: 200px;
+    }    
+    
